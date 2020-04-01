@@ -3,6 +3,10 @@
   https://github.com/benjaminbellamy/Deodshiot
 */
 
+#include "ThingsBoard.h"
+#include <ESP8266WiFi.h>
+#include "Credentials.h"
+
 #define RELAY_PIN 2               // Pin number for relay
 #define SWITCH2_PIN 7             // Pin number for relay
 #define SWITCH3_PIN 8             // Pin number for relay
@@ -18,11 +22,21 @@
 #define MIN_DURATION3 300000      // How long (5mn) should the light stay on to allow triggering
 #define MOTOR_DELAY 500           // How long will the motor stay on 
 
+// Baud rate for debug serial
+#define SERIAL_DEBUG_BAUD   115200
+
 int sensorValues[NUM_VAL];        // create an array for sensor data
 int i=0;
 unsigned long lastTime = millis()-MAX_FREQUENCY3;
 unsigned long switchOnTime = millis();
 boolean isLightOn=false;
+
+// Initialize ThingsBoard client
+WiFiClient espClient;
+// Initialize ThingsBoard instance
+ThingsBoard tb(espClient);
+// the Wifi radio's status
+int status = WL_IDLE_STATUS;
 
 
 // Reset all values in array :
@@ -30,22 +44,37 @@ void resetValues(){
     for (int j=0; j<NUM_VAL; j++) sensorValues[j]=analogRead(SENSOR_PIN);
 }
 
-// Setup routine runs once when you press reset:
 void setup() {
-  // initialize serial communication:
-  Serial.begin(9600);
+  // initialize serial for debugging
+  Serial.begin(SERIAL_DEBUG_BAUD);
   pinMode(RELAY_PIN, OUTPUT);
   pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(SWITCH2_PIN, INPUT);
-  pinMode(SWITCH3_PIN, INPUT);
+  pinMode(SWITCH2_PIN, INPUT_PULLUP);
+  pinMode(SWITCH3_PIN, INPUT_PULLUP);
   digitalWrite(RELAY_PIN, LOW);
   resetValues();
+  WiFi.begin(WIFI_AP, WIFI_PASSWORD);
+  InitWiFi();
 }
 
-// Loop routine runs over and over again forever:
 void loop() {
   // read the input on analog pin:
   int sensorValue = analogRead(SENSOR_PIN);
+
+  if (WiFi.status() != WL_CONNECTED) {
+    reconnect();
+  }
+  if (!tb.connected()) {
+    // Connect to the ThingsBoard
+    Serial.print("Connecting to: ");
+    Serial.print(THINGSBOARD_SERVER);
+    Serial.print(" with token ");
+    Serial.println(TOKEN);
+    if (!tb.connect(THINGSBOARD_SERVER, TOKEN)) {
+      Serial.println("Failed to connect");
+      return;
+    }
+  }
 
   // Sets the frequency and duration depending on the sliding switch:
   unsigned long maxFrequency = MAX_FREQUENCY1;
@@ -76,10 +105,12 @@ void loop() {
         delay(500);
         digitalWrite(RELAY_PIN, LOW);     // turn the motor off
         digitalWrite(LED_BUILTIN, LOW);    // turn the LED off
+        tb.sendTelemetryInt("pschitt", 1);
       }
       lastTime = millis();
       isLightOn=false;
       resetValues();
+      tb.sendTelemetryInt("lightDuration", (millis()-switchOnTime)/1000);
   }
 
   // we store the current value on top of the old one:
@@ -88,7 +119,44 @@ void loop() {
   // We move to the next cell array:
   i=(i+1) % NUM_VAL;
 
+  // Uploads new telemetry to ThingsBoard using MQTT.
+  // See https://thingsboard.io/docs/reference/mqtt-api/#telemetry-upload-api
+  // for more details
+
+  if((i % NUM_VAL)==0){
+    tb.sendTelemetryInt("lightValue", sensorValue);
+  }
+
+
+  tb.loop();
+  
   // print out the value you read:
   Serial.println(sensorValue);
   delay(DELAY);        // delay in between reads for stability
+}
+
+void InitWiFi()
+{
+  Serial.println("Connecting to AP ...");
+  // attempt to connect to WiFi network
+
+  WiFi.begin(WIFI_AP, WIFI_PASSWORD);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("Connected to AP");
+}
+
+void reconnect() {
+  // Loop until we're reconnected
+  status = WiFi.status();
+  if ( status != WL_CONNECTED) {
+    WiFi.begin(WIFI_AP, WIFI_PASSWORD);
+    while (WiFi.status() != WL_CONNECTED) {
+      delay(500);
+      Serial.print(".");
+    }
+    Serial.println("Connected to AP");
+  }
 }
