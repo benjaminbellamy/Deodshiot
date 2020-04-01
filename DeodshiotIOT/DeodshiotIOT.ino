@@ -7,9 +7,9 @@
 #include <ESP8266WiFi.h>
 #include "Credentials.h"
 
-#define RELAY_PIN 2               // Pin number for relay
-#define SWITCH2_PIN 7             // Pin number for relay
-#define SWITCH3_PIN 8             // Pin number for relay
+#define RELAY_PIN D3               // Pin number for relay
+#define SWITCH2_PIN D2             // Pin number for relay
+#define SWITCH3_PIN D1             // Pin number for relay
 #define SENSOR_PIN A0             // Pin number for light sensor
 #define NUM_VAL 20                // How many values we will store
 #define DELAY 50                  // Delay between each reading. If latency is 1000ms, then DELAY should be equal to (1000/NUMVAL)
@@ -38,17 +38,15 @@ ThingsBoard tb(espClient);
 // the Wifi radio's status
 int status = WL_IDLE_STATUS;
 
-
-// Reset all values in array :
-void resetValues(){
-    for (int j=0; j<NUM_VAL; j++) sensorValues[j]=analogRead(SENSOR_PIN);
-}
-
 void setup() {
   // initialize serial for debugging
   Serial.begin(SERIAL_DEBUG_BAUD);
+  Serial.println("Deodshiot starting...");
+  
   pinMode(RELAY_PIN, OUTPUT);
   pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(RELAY_PIN, LOW);     // turn the motor off
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED off
   pinMode(SWITCH2_PIN, INPUT_PULLUP);
   pinMode(SWITCH3_PIN, INPUT_PULLUP);
   digitalWrite(RELAY_PIN, LOW);
@@ -58,6 +56,8 @@ void setup() {
 }
 
 void loop() {
+  unsigned long startLoopTime=millis();
+  
   // read the input on analog pin:
   int sensorValue = analogRead(SENSOR_PIN);
 
@@ -101,10 +101,10 @@ void loop() {
   if(isLightOn && sensorValues[i]-sensorValue > THRESHOLD){
       if((millis()-lastTime)>maxFrequency && (millis()-switchOnTime)>minDuration){
         digitalWrite(RELAY_PIN, HIGH);     // turn the motor on
-        digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on
+        digitalWrite(LED_BUILTIN, LOW);   // turn the LED on
         delay(500);
         digitalWrite(RELAY_PIN, LOW);     // turn the motor off
-        digitalWrite(LED_BUILTIN, LOW);    // turn the LED off
+        digitalWrite(LED_BUILTIN, HIGH);    // turn the LED off
         tb.sendTelemetryInt("pschitt", 1);
       }
       lastTime = millis();
@@ -132,7 +132,16 @@ void loop() {
   
   // print out the value you read:
   Serial.println(sensorValue);
-  delay(DELAY);        // delay in between reads for stability
+  
+  unsigned long duration=millis()-startLoopTime; 
+  if(duration<DELAY){
+    delay(DELAY-duration);        // delay in between reads for stability
+  }
+}
+
+// Reset all values in array :
+void resetValues(){
+    for (int j=0; j<NUM_VAL; j++) sensorValues[j]=analogRead(SENSOR_PIN);
 }
 
 void InitWiFi()
