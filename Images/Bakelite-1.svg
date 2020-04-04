@@ -1089,11 +1089,6 @@
        r="0.5" />
     <path
        inkscape:connector-curvature="0"
-       id="path3348"
-       d="M 52.375225,50.493793 57.19442,50.352051"
-       style="fill:none;stroke:#0000ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       inkscape:connector-curvature="0"
        id="path3350"
        d="m 24.215999,57.958821 13.134672,0.330729 3.827009,-0.992187 h 2.362351 l 1.41741,0.708707"
        style="fill:none;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
@@ -1182,5 +1177,10 @@
        id="path3464"
        d="M 44.710359,53.272665 56.70408,53.13903"
        style="fill:none;stroke:#ff9c00;stroke-width:0.26458300000000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3348"
+       d="M 52.375225,50.493793 57.19442,50.352051"
+       style="fill:none;stroke:#0000ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>
