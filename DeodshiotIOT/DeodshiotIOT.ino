@@ -104,7 +104,7 @@ void loop() {
   }
 
   // Switch OFF
-  // if the new value is lower that the old one, trigger is raised:"$
+  // if the new value is lower that the old one, trigger is raised:
   if(isLightOn && sensorValues[i]-sensorValue > THRESHOLD){
       if((millis()-lastTime)>maxFrequency && (millis()-switchOnTime)>minDuration){
         digitalWrite(RELAY_PIN, LOW);     // turn the motor on
