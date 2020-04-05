@@ -8,13 +8,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="Bakelite.svg"
+   sodipodi:docname="Bakelite-2.svg"
    inkscape:version="1.0beta1 (ee59332, 2019-11-28)"
    id="svg8"
    version="1.1"
-   viewBox="0 0 32.174544 18.716516"
+   viewBox="0 0 35.174548 18.716516"
    height="18.716516mm"
-   width="32.174545mm">
+   width="35.174549mm">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -33,14 +33,15 @@
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
      inkscape:cy="30.553112"
-     inkscape:cx="61.484279"
+     inkscape:cx="77.930649"
      inkscape:zoom="7.9195959"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
      bordercolor="#666666"
      pagecolor="#ffffff"
-     id="base" />
+     id="base"
+     borderlayer="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -60,7 +61,7 @@
      inkscape:label="Layer 1">
     <rect
        y="24.794744"
-       x="12.021032"
+       x="14.151586"
        height="19.276815"
        width="32.940968"
        id="rect2910"
@@ -73,7 +74,7 @@
        inkscape:tile-w="2.5404132"
        inkscape:tile-cy="27.344841"
        inkscape:tile-cx="19.719209"
-       d="m 18.449003,26.074894 v 2.4 h 2.4 v -2.4 z m 1.2,0.727569 a 0.47236409,0.47246029 0 0 1 0.472091,0.472675 0.47236409,0.47246029 0 0 1 -0.472091,0.472187 0.47236409,0.47246029 0 0 1 -0.472579,-0.472187 0.47236409,0.47246029 0 0 1 0.472579,-0.472675 z"
+       d="m 20.579556,26.074894 v 2.4 h 2.4 v -2.4 z m 1.2,0.727569 a 0.47236409,0.47246029 0 0 1 0.472091,0.472675 0.47236409,0.47246029 0 0 1 -0.472091,0.472187 0.47236409,0.47246029 0 0 1 -0.472579,-0.472187 0.47236409,0.47246029 0 0 1 0.472579,-0.472675 z"
        style="fill:#e6e6e6;stroke:none;stroke-width:0.0932116"
        id="use1221" />
     <use
@@ -501,54 +502,52 @@
        x="0" />
     <rect
        y="26.074894"
-       x="18.449003"
+       x="20.579556"
        height="2.4000006"
        width="4.9404116"
        id="rect1514"
        style="fill:#cccccc;stroke:none;stroke-width:1.885" />
     <path
        inkscape:connector-curvature="0"
-       transform="scale(0.26458333)"
-       d="m 108.13477,98.550781 v 9.070309 h 19.20312 v 10.12891 9.07031 h 9.60156 v 19.19922 h 9.07032 V 117.75 h -9.60157 v -10.12891 -9.070309 h -9.07031 z"
-       style="fill:#cccccc;stroke:none;stroke-width:4.92472"
+       d="m 30.741211,26.074894 v 2.399852 h 5.080825 v 2.679941 2.399853 h 2.540413 v 5.079793 h 2.399855 v -7.479646 h -2.540415 v -2.679941 -2.399852 h -2.399853 z"
+       style="fill:#cccccc;stroke:none;stroke-width:1.303"
        id="rect1516" />
     <rect
        y="33.694584"
-       x="18.449003"
+       x="20.579556"
        height="4.9398966"
        width="2.4000001"
        id="rect1524"
        style="fill:#cccccc;stroke:none;stroke-width:1.303" />
     <rect
        y="36.234482"
-       x="20.989416"
+       x="23.119968"
        height="4.9398961"
        width="4.940413"
        id="rect1526"
        style="fill:#cccccc;stroke:none;stroke-width:1.303" />
     <rect
        y="33.694584"
-       x="26.070244"
+       x="28.200796"
        height="4.9398966"
        width="2.4000001"
        id="rect1528"
        style="fill:#cccccc;stroke:none;stroke-width:1.303" />
     <rect
        y="31.154688"
-       x="28.610659"
+       x="30.741211"
        height="7.4797931"
        width="2.4000001"
        id="rect1530"
        style="fill:#cccccc;stroke:none;stroke-width:1.303" />
     <path
        inkscape:connector-curvature="0"
-       transform="scale(0.26458333)"
-       d="m 117.73633,136.94922 v 9.07031 h 9.60156 v 9.59961 h 9.07031 v -9.59961 -9.07031 h -9.07031 z"
-       style="fill:#cccccc;stroke:none;stroke-width:4.92472"
+       d="m 33.281623,36.234481 v 2.399852 h 2.540413 v 2.539897 h 2.399853 v -2.539897 -2.399852 h -2.399853 z"
+       style="fill:#cccccc;stroke:none;stroke-width:1.303"
        id="rect1532" />
     <rect
        y="26.220402"
-       x="21.168331"
+       x="23.298883"
        height="7.1720753"
        width="12.270641"
        id="rect1544"
@@ -558,18 +557,18 @@
        id="rect2804"
        width="9.820322"
        height="2.1704166"
-       x="18.542858"
+       x="20.67341"
        y="33.800285" />
     <rect
        y="38.842587"
-       x="23.467045"
+       x="25.597597"
        height="2.2202971"
        width="12.516037"
        id="rect2810"
        style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:0.2, 0.2;stroke-dashoffset:0;stroke-opacity:1" />
     <rect
        y="33.800285"
-       x="28.677345"
+       x="30.807898"
        height="2.1704166"
        width="9.820322"
        id="rect2812"
@@ -579,11 +578,11 @@
        id="rect2814"
        width="7.3886647"
        height="2.1956043"
-       x="23.538448"
+       x="25.669001"
        y="36.315411" />
     <rect
        y="36.297668"
-       x="33.655193"
+       x="35.785748"
        height="2.2310865"
        width="4.9200544"
        id="rect2816"
@@ -591,233 +590,233 @@
     <text
        id="text2820"
        y="27.01263"
-       x="21.444447"
+       x="23.574999"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
          y="27.01263"
-         x="21.444447"
+         x="23.574999"
          id="tspan2818"
          sodipodi:role="line">JRC-23F</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="18.771751"
+       x="20.902304"
        y="34.529587"
        id="text2824"><tspan
          sodipodi:role="line"
          id="tspan2822"
-         x="18.771751"
+         x="20.902304"
          y="34.529587"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">R 1KΩ</tspan></text>
     <text
        id="text2828"
        y="34.529587"
-       x="28.927994"
+       x="31.058546"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
          y="34.529587"
-         x="28.927994"
+         x="31.058546"
          id="tspan2826"
          sodipodi:role="line">1N4007</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="23.883282"
+       x="26.013834"
        y="37.068645"
        id="text2832"><tspan
          sodipodi:role="line"
          id="tspan2830"
-         x="23.883282"
+         x="26.013834"
          y="37.068645"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">PN2222</tspan></text>
     <text
        id="text2836"
        y="37.135464"
-       x="33.972706"
+       x="36.10326"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
          y="37.135464"
-         x="33.972706"
+         x="36.10326"
          id="tspan2834"
          sodipodi:role="line">Photoresistor</tspan></text>
     <text
        id="text2844"
        y="39.607708"
-       x="23.783054"
+       x="25.913607"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
          y="39.607708"
-         x="23.783054"
+         x="25.913607"
          id="tspan2842"
          sodipodi:role="line">R 1KΩ</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path2850"
-       d="m 22.226446,39.858476 -0.534539,2.204973"
+       d="M 24.356999,39.858476 23.82246,42.063449"
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:connector-curvature="0"
        id="path2852"
-       d="M 22.293263,37.820545 18.55149,41.963223"
+       d="m 24.423816,37.820545 -3.741773,4.142678"
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:connector-curvature="0"
        id="path2854"
-       d="M 19.687385,37.386233 16.647194,37.95418"
+       d="M 21.817938,37.386233 18.777747,37.95418"
        style="fill:none;stroke:#9900ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:connector-curvature="0"
        id="path2856"
-       d="M 19.787611,27.196582 16.680603,26.829086"
+       d="M 21.918164,27.196582 18.811156,26.829086"
        style="fill:none;stroke:#0000ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:connector-curvature="0"
        id="path2858"
-       d="m 32.31587,37.45305 8.084903,0.968852"
+       d="m 34.446423,37.45305 8.084903,0.968852"
        style="fill:none;stroke:#00c600;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:connector-curvature="0"
        id="path2860"
-       d="m 37.16013,32.241294 3.507913,0.734991"
+       d="m 39.290683,32.241294 3.507913,0.734991"
        style="fill:none;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:connector-curvature="0"
        id="path2862"
-       d="m 34.955157,32.374929 5.813112,-3.240643"
+       d="m 37.08571,32.374929 5.813112,-3.240643"
        style="fill:none;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <circle
        r="0.5"
        cy="37.319416"
-       cx="19.637272"
+       cx="21.767824"
        id="path2864"
        style="fill:#9900ff;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <circle
        style="fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle2866"
-       cx="19.737497"
+       cx="21.86805"
        cy="27.229992"
        r="0.5" />
     <circle
        r="0.5"
        cy="32.341522"
-       cx="35.038677"
+       cx="37.169231"
        id="circle2868"
        style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <circle
        style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle2870"
-       cx="37.277058"
+       cx="39.407612"
        cy="32.308113"
        r="0.5" />
     <circle
        r="0.5"
        cy="37.453053"
-       cx="32.332573"
+       cx="34.463127"
        id="circle2872"
        style="fill:#00c600;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <circle
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle2874"
-       cx="22.309965"
+       cx="24.440517"
        cy="37.853958"
        r="0.5" />
     <circle
        r="0.5"
        cy="39.958706"
-       cx="22.20974"
+       cx="24.340292"
        id="circle2876"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="40.955124"
+       x="43.085678"
        y="29.351238"
        id="text2880"><tspan
          sodipodi:role="line"
          id="tspan2878"
-         x="40.955124"
+         x="43.085678"
          y="29.351238"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">To 3V</tspan></text>
     <text
        id="text2884"
        y="33.260056"
-       x="40.905735"
+       x="43.036289"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
          y="33.260056"
-         x="40.905735"
+         x="43.036289"
          id="tspan2882"
          sodipodi:role="line">From 3V</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="40.955124"
+       x="43.085678"
        y="38.772491"
        id="text2888"><tspan
          sodipodi:role="line"
          id="tspan2886"
-         x="40.955124"
+         x="43.085678"
          y="38.772491"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">To A0</tspan></text>
     <text
        id="text2892"
        y="42.781532"
-       x="21.511267"
+       x="23.641819"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
          y="42.781532"
-         x="21.511267"
+         x="23.641819"
          id="tspan2890"
          sodipodi:role="line">From GND</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="17.903128"
+       x="20.03368"
        y="42.781532"
        id="text2896"><tspan
          sodipodi:role="line"
          id="tspan2894"
-         x="17.903128"
+         x="20.03368"
          y="42.781532"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">To GND</tspan></text>
     <text
        id="text2900"
        y="38.20454"
-       x="14.506884"
+       x="12.879193"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
          y="38.20454"
-         x="14.506884"
+         x="12.879193"
          id="tspan2898"
-         sodipodi:role="line">To D0</tspan></text>
+         sodipodi:role="line">To Digital Output</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="13.392954"
+       x="15.505868"
        y="27.046038"
        id="text2904"><tspan
          sodipodi:role="line"
          id="tspan2902"
-         x="13.392954"
+         x="15.505868"
          y="27.046038"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">To motor</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:0.70555599999999996px;line-height:1.25;font-family:sans-serif;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.264583;"
-       x="28.694136"
+       style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="31.659904"
        y="43.215843"
        id="text2908"><tspan
          sodipodi:role="line"
          id="tspan2906"
-         x="28.694136"
+         x="31.659904"
          y="43.215843"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583;fill:#666666;">https://github.com/benjaminbellamy/Deodshiot</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#666666;stroke-width:0.264583">https://github.com/benjaminbellamy/Deodshiot</tspan></text>
   </g>
 </svg>

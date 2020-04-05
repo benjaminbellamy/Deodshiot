@@ -1,6 +1,9 @@
 /*
   Deodshiot · A Light Triggered Air Freshener
   https://github.com/benjaminbellamy/Deodshiot
+  
+  Uploads telemetry to ThingsBoard using MQTT.
+  See https://thingsboard.io/docs/reference/mqtt-api/#telemetry-upload-api for more details
 */
 
 #include "ThingsBoard.h"
@@ -8,19 +11,19 @@
 #include "Credentials.h"
 
 #define RELAY_PIN D3               // Pin number for relay
-#define SWITCH2_PIN D2             // Pin number for relay
-#define SWITCH3_PIN D1             // Pin number for relay
+#define SWITCH1_PIN D1             // Pin number for sliding switch
+#define SWITCH2_PIN D2             // Pin number for sliding switch
 #define SENSOR_PIN A0             // Pin number for light sensor
 #define NUM_VAL 20                // How many values we will store
 #define DELAY 50                  // Delay between each reading. If latency is 1000ms, then DELAY should be equal to (1000/NUMVAL)
 #define THRESHOLD 50              // What threshold value (old value minus current value) will trigger
-#define MAX_FREQUENCY1 30000      // How often (30s) do we allow triggering
-#define MAX_FREQUENCY2 300000     // How often (5mn) do we allow triggering
-#define MAX_FREQUENCY3 1800000    // How often (30mn) do we allow triggering
-#define MIN_DURATION1 5000        // How long (5s) should the light stay on to allow triggering
-#define MIN_DURATION2 180000      // How long (3mn) should the light stay on to allow triggering
-#define MIN_DURATION3 300000      // How long (5mn) should the light stay on to allow triggering
-#define MOTOR_DELAY 500           // How long will the motor stay on 
+#define MAX_FREQUENCY1 1800000    // How often (once every 30mn) do we allow triggering
+#define MAX_FREQUENCY2 300000     // How often (once every 5mn) do we allow triggering
+#define MAX_FREQUENCY3 30000      // How often (once every 30s) do we allow triggering
+#define MIN_DURATION1 300000      // How long (during at least 5mn) should the light stay on to allow triggering
+#define MIN_DURATION2 180000      // How long (during at least 3mn) should the light stay on to allow triggering
+#define MIN_DURATION3 5000        // How long (during at least 5s) should the light stay on to allow triggering
+#define MOTOR_DELAY 200           // How long the motor will stay on 
 
 // Baud rate for debug serial
 #define SERIAL_DEBUG_BAUD   115200
@@ -45,10 +48,10 @@ void setup() {
   
   pinMode(RELAY_PIN, OUTPUT);
   pinMode(LED_BUILTIN, OUTPUT);
-  digitalWrite(RELAY_PIN, LOW);     // turn the motor off
+  digitalWrite(RELAY_PIN, HIGH);     // turn the motor off
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED off
+  pinMode(SWITCH1_PIN, INPUT_PULLUP);
   pinMode(SWITCH2_PIN, INPUT_PULLUP);
-  pinMode(SWITCH3_PIN, INPUT_PULLUP);
   digitalWrite(RELAY_PIN, LOW);
   resetValues();
   WiFi.begin(WIFI_AP, WIFI_PASSWORD);
@@ -77,14 +80,17 @@ void loop() {
   }
 
   // Sets the frequency and duration depending on the sliding switch:
-  unsigned long maxFrequency = MAX_FREQUENCY1;
-  unsigned long minDuration = MIN_DURATION1;
-  if(digitalRead(SWITCH2_PIN)){
+  unsigned long maxFrequency = MAX_FREQUENCY3;
+  unsigned long minDuration = MIN_DURATION3;
+  unsigned int positionSwitch=3;
+  if(!digitalRead(SWITCH1_PIN)){
+    maxFrequency = MAX_FREQUENCY1;
+    minDuration = MIN_DURATION1;
+    positionSwitch=1;
+  } else if(!digitalRead(SWITCH2_PIN)){
     maxFrequency = MAX_FREQUENCY2;
     minDuration = MIN_DURATION2;
-  } else if(digitalRead(SWITCH3_PIN)){
-    maxFrequency = MAX_FREQUENCY3;
-    minDuration = MIN_DURATION3;
+    positionSwitch=2;
   }
 
   // Switch ON
@@ -94,22 +100,24 @@ void loop() {
       switchOnTime = lastTime;
       isLightOn=true;
       resetValues();
+      tb.sendTelemetryInt("lightOn", 1);
   }
 
   // Switch OFF
-  // if the new value is lower that the old one, trigger is raised:
+  // if the new value is lower that the old one, trigger is raised:"$
   if(isLightOn && sensorValues[i]-sensorValue > THRESHOLD){
       if((millis()-lastTime)>maxFrequency && (millis()-switchOnTime)>minDuration){
-        digitalWrite(RELAY_PIN, HIGH);     // turn the motor on
+        digitalWrite(RELAY_PIN, LOW);     // turn the motor on
         digitalWrite(LED_BUILTIN, LOW);   // turn the LED on
-        delay(500);
-        digitalWrite(RELAY_PIN, LOW);     // turn the motor off
+        delay(MOTOR_DELAY);
+        digitalWrite(RELAY_PIN, HIGH);     // turn the motor off
         digitalWrite(LED_BUILTIN, HIGH);    // turn the LED off
         tb.sendTelemetryInt("pschitt", 1);
       }
       lastTime = millis();
       isLightOn=false;
       resetValues();
+      tb.sendTelemetryInt("lightOn", 0);
       tb.sendTelemetryInt("lightDuration", (millis()-switchOnTime)/1000);
   }
 
@@ -119,19 +127,13 @@ void loop() {
   // We move to the next cell array:
   i=(i+1) % NUM_VAL;
 
-  // Uploads new telemetry to ThingsBoard using MQTT.
-  // See https://thingsboard.io/docs/reference/mqtt-api/#telemetry-upload-api
-  // for more details
-
   if((i % NUM_VAL)==0){
+    Serial.println((millis()-switchOnTime)/1000);
     tb.sendTelemetryInt("lightValue", sensorValue);
+    tb.sendTelemetryInt("positionSwitch", positionSwitch);
   }
 
-
   tb.loop();
-  
-  // print out the value you read:
-  Serial.println(sensorValue);
   
   unsigned long duration=millis()-startLoopTime; 
   if(duration<DELAY){

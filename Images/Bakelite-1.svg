@@ -12,9 +12,9 @@
    inkscape:version="1.0beta1 (ee59332, 2019-11-28)"
    id="svg8"
    version="1.1"
-   viewBox="0 0 44.17499 20.31413"
+   viewBox="0 0 46.17499 20.31413"
    height="20.314131mm"
-   width="44.174992mm">
+   width="46.174992mm">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -69,45 +69,45 @@
     <text
        id="text2892"
        y="54.262562"
-       x="57.159145"
+       x="57.426414"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
          y="54.262562"
-         x="57.159145"
+         x="57.426414"
          id="tspan2890"
-         sodipodi:role="line">To D2</tspan></text>
+         sodipodi:role="line">To Digital Input</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="57.159145"
+       x="57.426414"
        y="52.419926"
        id="text2896"><tspan
          sodipodi:role="line"
          id="tspan2894"
-         x="57.159145"
+         x="57.426414"
          y="52.419926"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">To GND</tspan></text>
     <text
        id="text2900"
        y="53.494228"
-       x="57.159145"
+       x="57.426414"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
          y="53.494228"
-         x="57.159145"
+         x="57.426414"
          id="tspan2898"
-         sodipodi:role="line">To D1</tspan></text>
+         sodipodi:role="line">To Digital Input</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="57.159145"
+       x="57.426414"
        y="50.575054"
        id="text2904"><tspan
          sodipodi:role="line"
          id="tspan2902"
-         x="57.159145"
+         x="57.426414"
          y="50.575054"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">To motor</tspan></text>
     <text
@@ -1010,12 +1010,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="57.159145"
+       x="57.426414"
        y="60.298035"
        id="text2880"><tspan
          sodipodi:role="line"
          id="tspan2878"
-         x="57.159145"
+         x="57.426414"
          y="60.298035"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">To 3V</tspan></text>
     <circle
@@ -1176,7 +1176,7 @@
        inkscape:connector-curvature="0"
        id="path3464"
        d="M 44.710359,53.272665 56.70408,53.13903"
-       style="fill:none;stroke:#ff9c00;stroke-width:0.26458300000000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:none;stroke:#ff9c00;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:connector-curvature="0"
        id="path3348"
