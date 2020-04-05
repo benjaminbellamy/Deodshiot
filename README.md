@@ -35,6 +35,7 @@ There is nothing complicated as long as you are cautious.
 
 Have a close look at the schematics and pictures below to see how things work.
 
+* Flash your microcontroller with the suitable program.
 * Remove the top cover.
 * Remove the 4 screws (you need a long - 4cm long minimum - Philips ⨁ screwdriver).
 * Remove the block out of Air Freshener.
