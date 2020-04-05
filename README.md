@@ -3,17 +3,22 @@ _A Light Triggered Air Freshener_
 
 This project was heavily inspired by [James Callaghan](https://github.com/jcallaghan)’s project: [Can you IoT an Airwick air freshener?](https://jcallaghan.com/2020/03/can-you-iot-an-airwick-air-freshener/)
 
+The default behaviour of this device before you tweak it is to spray once every 15mn. This is wasteful and inconvenient.
+
 I wanted to have the Air Freshener triggered every time I leave the restroom, when I switch the light off.
+Depending on the sliding switch position, it will spray more or less often:
+* ❚ : Off
+* ● : Will spray once every **30mn** at most, if light was on at during least **5mn**.
+* ● ● : Will spray once every **5mn** at most, if light was on at during least **3mn**.
+* ● ● ● : Will spray once every **30s** at most, if light was on at during least **5s**.
 
 I also wanted everything to fit in and to use the default AA batteries.
 
-This is what this project does.
-
 There are two versions:
 * Deodshiot, using a 3V3 [Arduino Pro Mini](https://store.arduino.cc/arduino-pro-mini)
-* DeodshiotIOT, using a [NodeMCU](http://www.nodemcu.com/) / ESP-8266 / [LOLIN (WEMOS) D1 mini](https://docs.wemos.cc/en/latest/d1/d1_mini.html) connecting to a [ThingsBoard](https://thingsboard.io/) server, so that you may monitor how long you are spending there…
+* DeodshiotIOT, using a [NodeMCU](http://www.nodemcu.com/) / ESP-8266 / [LOLIN (WEMOS) D1 mini](https://docs.wemos.cc/en/latest/d1/d1_mini.html) connecting to a [ThingsBoard](https://thingsboard.io/) server, so that you may monitor how long you are spending there and make statistics out of it…
 
-Todo: Test with a MQ-136 gas sensor if the Air Freshener can be triggered when it smells bad.
+_Todo: Test with a MQ-136 gas sensor if the Air Freshener can be triggered when it smells bad._
 
 ## Parts List
 You will need:
@@ -24,6 +29,23 @@ You will need:
 * 1 diode (1N4007 or equivalent)
 * 1 relay (JRC-23F or equivalent)
 * 1 microcontroller (Arduino Pro Mini or equivalent / LOLIN WEMOS D1 mini or equivalent for the IOT version)
+
+## The build
+There is nothing complicated as long as you are cautious.
+
+Have a close look at the schematics and pictures below to see how things work.
+
+* Remove the top cover.
+* Remove the 4 screws (you need a long - 4cm long minimum - Philips ⨁ screwdriver).
+* Remove the block out of Air Freshener.
+* Push gently the part with the motor away from the rest (so that the axes are out), then up.
+* Remove the circuit board.
+* Un-solder the sliding switch and the two battery connectors. (NB: You need to bend the sliding swicth pins so that they can fit into the 0.1in/2.54mm testing plate.)
+* Cut the 2 bakelite testing plates, solder all the components.
+* Drill one hole so that the wires can go through.
+* Solder the wires to the bakelite testing plates.
+* Put everything back in place.
+* Drill one hole in the top cover so that the photoresitor can see the ambiant light.
 
 ## Schematics
 Schematic is very classic.
