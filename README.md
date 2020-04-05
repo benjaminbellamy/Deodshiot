@@ -43,7 +43,7 @@ Have a close look at the schematics and pictures below to see how things work.
 * Un-solder the sliding switch and the two battery connectors. (NB: You need to bend the sliding swicth pins so that they can fit into the 0.1in/2.54mm testing plate.)
 * Cut the 2 bakelite testing plates, solder all the components.
 * Drill one hole so that the wires can go through.
-* Solder the wires to the bakelite testing plates.
+* Solder the wires to the bakelite testing plates, microcontroller an motor. Double check that the motor turns the right way.
 * Put everything back in place.
 * Drill one hole in the top cover so that the photoresitor can see the ambiant light.
 
