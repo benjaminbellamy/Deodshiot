@@ -17,7 +17,7 @@ Todo: Test with a MQ-136 gas sensor if the Air Freshener can be triggered when i
 
 ## Parts List
 You will need:
-* 2 pieces of bakelite testing plate (6x8 and 6x15)
+* 2 pieces of bakelite testing plate (0.1in/2.54mm, 6x8 and 6x15)
 * 2 resistors ~1KΩ
 * 1 photoresistor
 * 1 PNP transistor (PN2222 or equivalent)
