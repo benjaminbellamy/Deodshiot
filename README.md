@@ -75,6 +75,6 @@ Schematic is very classic.
 ## Project pictures
 <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_01.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_02.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_03.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_04.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_05.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_06.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_07.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_08a.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_08b.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_09.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_10.jpg" width="23%"> <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/Deodshiot_11.jpg" width="23%">
 
-## Measurement readings
+## Reading measurements
 You may use Arduino Serial Plotter to check if everything is working as intended.
 <img src="https://github.com/benjaminbellamy/Deodshiot/raw/master/Images/SerialPlotter.png" width="100%">
