@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="46.174992mm"
-   height="20.314131mm"
-   viewBox="0 0 46.17499 20.31413"
+   width="47.433037mm"
+   height="19.672243mm"
+   viewBox="0 0 47.433035 19.672242"
    version="1.1"
    id="svg8"
    inkscape:version="1.0beta1 (ee59332, 2019-11-28)"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="76.498685"
-     inkscape:cy="50.193339"
+     inkscape:zoom="3.959798"
+     inkscape:cx="79.425877"
+     inkscape:cy="26.979053"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -60,12 +60,22 @@
      id="layer1"
      transform="translate(-17.114781,-43.216649)">
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.204575;stroke-miterlimit:4;stroke-dasharray:0.204575, 0.204575;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3462"
-       width="48.345745"
-       height="22.300594"
-       x="16.098482"
-       y="42.223415" />
+       y="42.796303"
+       x="16.643406"
+       height="20.512936"
+       width="48.375786"
+       id="rect1707"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:0.1, 0.10000000000000001;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1703"
+       d="M 54.817906,47.941351 56.94402,48.13034"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1705"
+       d="M 54.912399,50.492691 57.13301,49.783985"
+       style="fill:none;stroke:#0000ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -87,7 +97,7 @@
          y="52.419926"
          x="57.426414"
          id="tspan2894"
-         sodipodi:role="line">To GND</tspan></text>
+         sodipodi:role="line">To plate #2 (GND)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -100,25 +110,14 @@
          y="53.494228"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">To Digital Input</tspan></text>
     <text
-       id="text2904"
-       y="50.575054"
-       x="57.426414"
-       style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
-         y="50.575054"
-         x="57.426414"
-         id="tspan2902"
-         sodipodi:role="line">To motor</tspan></text>
-    <text
        id="text2908"
-       y="62.748436"
-       x="44.957592"
+       y="61.756248"
+       x="48.201138"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#666666;stroke-width:0.264583"
-         y="62.748436"
-         x="44.957592"
+         y="61.756248"
+         x="48.201138"
          id="tspan2906"
          sodipodi:role="line">https://github.com/benjaminbellamy/Deodshiot</tspan></text>
     <path
@@ -1017,7 +1016,7 @@
          y="60.298035"
          x="57.426414"
          id="tspan2878"
-         sodipodi:role="line">To 3V</tspan></text>
+         sodipodi:role="line">To plate #2 (3V)</tspan></text>
     <circle
        r="0.5"
        cy="58.010494"
@@ -1165,22 +1164,17 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="53.817467"
-       y="47.625793"
+       y="47.507675"
        id="text2828"><tspan
          sodipodi:role="line"
          id="tspan2826"
          x="53.817467"
-         y="47.625793"
+         y="47.507675"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">Motor</tspan></text>
     <path
        style="fill:none;stroke:#ff9c00;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 44.710359,53.272665 56.70408,53.13903"
        id="path3464"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#0000ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 52.375225,50.493793 57.19442,50.352051"
-       id="path3348"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
@@ -1192,5 +1186,55 @@
        id="path990"
        style="fill:#e6e6e6;stroke:none;stroke-width:0.0932117"
        d="m 56.202539,54.376648 v 2.399854 h 1.190106 v -0.727605 a 0.47236409,0.47246029 0 0 1 -0.462502,-0.471805 0.47236409,0.47246029 0 0 1 0.462502,-0.472323 v -0.728121 z" />
+    <circle
+       style="fill:#0000ff;fill-opacity:0.25098;stroke:#0000ff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:0.1, 0.1;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle1681"
+       cx="54.889282"
+       cy="50.522774"
+       r="0.5" />
+    <circle
+       style="fill:#000000;fill-opacity:0.25098;stroke:#000000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:0.1, 0.1;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle1683"
+       cx="54.863167"
+       cy="48.059315"
+       r="0.5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="57.377026"
+       y="51.378254"
+       id="text1691"><tspan
+         sodipodi:role="line"
+         id="tspan1689"
+         x="57.377026"
+         y="51.378254"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">To plate #2 (motor)</tspan></text>
+    <text
+       id="text1695"
+       y="50.008091"
+       x="57.426414"
+       style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+         y="50.008091"
+         x="57.426414"
+         id="tspan1693"
+         sodipodi:role="line">To motor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:0.705556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="57.426414"
+       y="48.543434"
+       id="text1699"><tspan
+         sodipodi:role="line"
+         id="tspan1697"
+         x="57.426414"
+         y="48.543434"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583">To motor</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path1701"
+       d="M 56.802281,51.012408 55.85734,51.390384 H 52.928024 L 52.361061,50.539937"
+       style="fill:none;stroke:#0000ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>
