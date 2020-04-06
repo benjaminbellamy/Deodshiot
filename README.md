@@ -8,9 +8,9 @@ The default behaviour of this device before you tweak it is to spray once every 
 I wanted to have the Air Freshener triggered every time I leave the restroom, when I switch the light off.
 Depending on the sliding switch position, it will spray more or less often:
 * ❚ : Off
-* ● : Will spray once every **30mn** at most, if light was on at during least **5mn**.
-* ● ● : Will spray once every **5mn** at most, if light was on at during least **3mn**.
-* ● ● ● : Will spray once every **30s** at most, if light was on at during least **5s**.
+* ● : Will spray once every **30mn** at most, if light was on during at least **5mn**.
+* ● ● : Will spray once every **5mn** at most, if light was on during at least **3mn**.
+* ● ● ● : Will spray once every **30s** at most, if light was on during at least **5s**.
 
 I also wanted everything to fit in and to use the default AA batteries.
 
